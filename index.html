@@ -38,8 +38,12 @@
   /* mosaico sem corte */
   .grid2{display:grid;grid-template-columns:1fr 1.45fr;gap:clamp(20px,4vw,48px);align-items:center;}
   .masonry{column-count:3;column-gap:10px;}
+  .masonry.m4{column-count:4;}
   .masonry img{width:100%;display:block;margin-bottom:10px;border-radius:3px;}
-  @media(max-width:760px){.masonry{column-count:2;} .grid2{grid-template-columns:1fr;}}
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(16px,2.4vw,26px);}
+  .trio img{width:100%;display:block;border-radius:3px;}
+  .slide.top{justify-content:flex-start;padding-top:clamp(40px,7vw,78px);}
+  @media(max-width:760px){.masonry,.masonry.m4{column-count:2;} .grid2{grid-template-columns:1fr;}}
   /* repertorio + formula */
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.8vw,20px);}
   .cards .c img{width:100%;display:block;border-radius:3px;}
@@ -86,7 +90,7 @@
   <div class="rule"></div>
   <div class="wordmark">Elson&nbsp;Florentino</div>
   <p class="display accent" style="font-size:clamp(20px,2.6vw,30px);margin-top:.7em;">A moda é a porta. Vista-se de quem você é.</p>
-  <p class="sub">Estilo, identidade e legado masculino &nbsp;·&nbsp; Apresentação do projeto para Anne e Sóstenes</p>
+  <p class="sub">Estilo, identidade e legado masculino &nbsp;·&nbsp; Apresentação do projeto para Annie e Sóstenes</p>
 </div></section>
 
 <!-- 2 VISAO -->
@@ -127,44 +131,33 @@
 </div></section>
 
 <!-- 6 MOODBOARD -->
-<section class="slide dark"><div class="wrap">
-  <span class="kicker">"referências"</span>
-  <div class="grid2">
-    <div>
-      <p class="display" style="font-size:clamp(26px,3.4vw,40px);color:var(--cream);">Uma estética só.</p>
-      <p class="sub">Streetwear adulto, quiet luxury e raiz negra. Volume, neutro e um ponto de cor.</p>
-    </div>
-    <div class="masonry">
-      <img src="img/02ce2fc8219559e70dd90e792a14d6bb.jpg" alt="">
-      <img src="img/05c5788b833cee584540216557ca7fcd.jpg" alt="">
-      <img src="img/8e906823d7753c82cbb3c85671960032.jpg" alt="">
-      <img src="img/1168f4694830e08a11239c5010cd421c.jpg" alt="">
-      <img src="img/78a29abb4283e1537e0b6e719b63b93b.jpg" alt="">
-      <img src="img/a1c5cf922994185a8b278ce0ab957448.jpg" alt="">
-      <img src="img/b50a7c85669bd300a6053172dd64841b.jpg" alt="">
-      <img src="img/53072c98e55cb50835ea8752c862a0f3.jpg" alt="">
-      <img src="img/2c12406db6007d7d9d45e6a4c7b9efeb.jpg" alt="">
-      <img src="img/750316847dd07c93db6fcc2da264e420.jpg" alt="">
-      <img src="img/ca31198e6d2840f1e3e58c11835b0f6f.jpg" alt="">
-      <img src="img/fc9612a9cec7fe8bc97a0979053fba80.jpg" alt="">
-    </div>
+<section class="slide dark top"><div class="wrap">
+  <span class="kicker">"referências que eu gosto"</span>
+  <p class="display" style="font-size:clamp(22px,3vw,34px);color:var(--cream);margin-bottom:6px;">Uma estética só.</p>
+  <p class="sub" style="margin-top:0;margin-bottom:clamp(14px,2.2vw,24px);">Streetwear adulto, quiet luxury e raiz negra. Volume, neutro e um ponto de cor.</p>
+  <div class="masonry m4">
+    <img src="img/02ce2fc8219559e70dd90e792a14d6bb.jpg" alt="">
+    <img src="img/05c5788b833cee584540216557ca7fcd.jpg" alt="">
+    <img src="img/1168f4694830e08a11239c5010cd421c.jpg" alt="">
+    <img src="img/8e906823d7753c82cbb3c85671960032.jpg" alt="">
+    <img src="img/78a29abb4283e1537e0b6e719b63b93b.jpg" alt="">
+    <img src="img/53072c98e55cb50835ea8752c862a0f3.jpg" alt="">
+    <img src="img/a1c5cf922994185a8b278ce0ab957448.jpg" alt="">
+    <img src="img/b50a7c85669bd300a6053172dd64841b.jpg" alt="">
   </div>
 </div></section>
 
 <!-- 7 FORMULA -->
-<section class="slide cream"><div class="wrap"><div class="grid2">
-  <div>
-    <span class="kicker">"a fórmula"</span>
-    <p class="display" style="font-size:clamp(26px,3.6vw,42px);">Volume embaixo, ajuste em cima, base branca.</p>
-    <p class="sub"><b style="color:var(--ink)">80% neutro</b> (preto, cru, cinza, bege, marrom) mais <b style="color:var(--ink)">um ponto de cor</b> por look.</p>
-    <p class="sub" style="margin-top:14px;">Cardigã · calça larga · jeans baggy · boné LF · loafer · corrente · camiseta branca.</p>
-  </div>
-  <div class="col3">
+<section class="slide cream top"><div class="wrap">
+  <span class="kicker">"a fórmula"</span>
+  <p class="display" style="font-size:clamp(24px,3.4vw,40px);max-width:900px;">Volume embaixo, ajuste em cima, base branca.</p>
+  <p class="sub" style="max-width:840px;"><b style="color:var(--ink)">80% neutro</b> (preto, cru, cinza, bege, marrom) mais <b style="color:var(--ink)">um ponto de cor</b> por look. Cardigã · calça larga · jeans baggy · boné LF · loafer · corrente.</p>
+  <div class="trio">
     <img src="img/a281985f0b35aea9b644e3101efdbac6.jpg" alt="">
     <img src="img/20811ed6a62586848ed11bed1d752835.jpg" alt="">
     <img src="img/98e38bef9165a6734599b76ebdc35ccf.jpg" alt="">
   </div>
-</div></div></section>
+</div></section>
 
 <!-- 8 REPERTORIO -->
 <section class="slide cream"><div class="wrap">
@@ -194,7 +187,7 @@
   <span class="kicker">"o time"</span>
   <div class="team">
     <div class="m"><h4>Elson</h4><p>Influência e conteúdo. Imagem, pesquisa e curadoria da marca.</p></div>
-    <div class="m"><h4>Anne</h4><p>Personal stylist e moda. Referências, tendências, site, parcerias, patrocínios e convites para desfiles.</p></div>
+    <div class="m"><h4>Annie</h4><p>Personal stylist e moda. Referências, tendências, site, parcerias, patrocínios e convites para desfiles.</p></div>
     <div class="m"><h4>Sóstenes</h4><p>Conteúdo e temas. Pesquisa de pautas (paternidade, desenvolvimento pessoal, comunidade) e apoio à oratória e ao carisma de fala.</p></div>
   </div>
 </div></section>
@@ -204,7 +197,7 @@
   <span class="kicker">"próximos passos"</span>
   <div class="steps">
     <div class="s"><span class="n">1</span><span class="x">Garantir o mesmo @ no Instagram e no TikTok.</span></div>
-    <div class="s"><span class="n">2</span><span class="x">Anne: primeiras referências, alvos de parceria e patrocínio.</span></div>
+    <div class="s"><span class="n">2</span><span class="x">Annie: pesquisar tendências e os 5 pilares da moda, analisar meus gostos e adaptar ao que já tenho.</span></div>
     <div class="s"><span class="n">3</span><span class="x">Sóstenes: primeiras pautas e plano pra desenvolver a oratória.</span></div>
     <div class="s"><span class="n">4</span><span class="x">Montar o plano editorial de 90 dias e gravar o primeiro conteúdo.</span></div>
   </div>
